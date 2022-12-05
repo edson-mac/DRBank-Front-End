@@ -126,14 +126,13 @@ const Home = () => {
           <Header />
           <div className='Registerbox mt-4 shadow-xl rounded-3xl border-solid border-4
      border-green-400 bg-green-300 w-96 text-center'>
-            <div className='flex'>
-              <div>
-                <h2 className='ml-20 mt-4 text-2xl'>Bem-vindo(a) {user}</h2>
-              </div>
-              <div>
-                <button onClick={handleLogout}><img className="carLogo w-8 ml-6 mt-6" src={logout} alt="logoutSvg" /></button>
-              </div>
+            <div className='flex justify-end'>
+              <img onClick={handleLogout} className="absolute carLogo w-8 mt-2" src={logout} alt="logoutSvg" />
             </div>
+            <div className='flex justify-center'>
+              <h2 className='mt-4 text-2xl'>Bem-vindo(a) {user}</h2>
+            </div>
+
 
             <p className='mt-4 text-3xl'>Saldo: R$ {balance}</p>
 

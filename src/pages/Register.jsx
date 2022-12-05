@@ -81,9 +81,9 @@ const Register = () => {
             <Button name="Registrar" onClick={sendRegister} disabled={activateButton} />
           </div>
 
-          <div className="mt-2 mb-2 text-sm font-medium text-black dark:text-gray-300">
-            Já tem uma conta? <button onClick={() => navigate('/')} className="text-blue-700 hover:underline dark:text-blue-500">Faça login.</button>
-          </div>
+          <div className="flex flex-row justify-center mt-2 mb-2 text-sm font-medium text-black dark:text-gray-300">
+                        <p>Já tem uma conta?</p> <a onClick={() => navigate('/')} className="ml-1 cursor-pointer text-blue-700 hover:underline dark:text-blue-500">Faça o login.</a>
+                    </div>
         </div>
       </div>
     </motion.div>
