@@ -122,7 +122,7 @@ const Home = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}>
       <div>
-        <div className='flex flex-col mt-56 items-center'>
+        <div className='flex flex-col mt-12 lg:mt-44 items-center'>
           <Header />
           <div className='Registerbox mt-4 shadow-xl rounded-3xl border-solid border-4
      border-green-400 bg-green-300 w-96 text-center'>
