@@ -11,8 +11,8 @@ function App() {
             <Route element={<PrivateRoutes />}>
                 <Route element={<Home/>} path="/home" exact/>
             </Route>
-            <Route element={<Login/>} path="/" exact/>
             <Route element={<Register/>} path="/register" exact/>
+            <Route element={<Login/>} path="/" exact/>
           </Routes>
     </div>
   );

@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import Button from '../components/button';
 import Input from '../components/input';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import Header from '../components/Header';
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
 
   const [cadastro, setCadastro] = useState({ name: '', cpf: '' })
   const [apiResponse, setApiResponse] = useState('')
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setCadastro({ ...cadastro, [e.target.name]: e.target.value })
@@ -80,7 +82,7 @@ const Register = () => {
         </div>
 
         <div className="mt-2 mb-2 text-sm font-medium text-black dark:text-gray-300">
-          Já tem uma conta? <a href="/" className="text-blue-700 hover:underline dark:text-blue-500">Faça login.</a>
+          Já tem uma conta? <button onClick={ () => navigate('/')} className="text-blue-700 hover:underline dark:text-blue-500">Faça login.</button>
         </div>
       </div>
       </div>
