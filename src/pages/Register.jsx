@@ -58,33 +58,33 @@ const Register = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}>
       <div className='flex flex-col mt-80 items-center'>
-                <Header />
-                <div className='Registerbox mt-4 shadow-xl rounded-3xl border-solid border-4
+        <Header />
+        <div className='Registerbox mt-4 shadow-xl rounded-3xl border-solid border-4
      border-green-400 bg-green-300 w-96 text-center content-center'>
-        <div className="Registerbox__title mt-4 text-4xl">Cadastro</div>
+          <div className="Registerbox__title mt-4 text-4xl">Cadastro</div>
 
-        <div className='Registerbox__input mt-4 flex flex-col'>
-          <label className='mr-1 text-lg'>Nome</label>
-          <Input name='name' type='text' onChange={handleChange} />
-        </div>
+          <div className='Registerbox__input mt-4 flex flex-col'>
+            <label className='mr-1 text-lg'>Nome</label>
+            <Input name='name' type='text' onChange={handleChange} />
+          </div>
 
-        <div className='Registerbox__input mt-1 mb-5 flex flex-col'>
-          <label className='mr-3 text-lg'>CPF</label>
-          <Input name='cpf' type='number' onChange={handleChange} />
-        </div>
+          <div className='Registerbox__input mt-1 mb-5 flex flex-col'>
+            <label className='mr-3 text-lg'>CPF</label>
+            <Input name='cpf' type='number' onChange={handleChange} />
+          </div>
 
-        <div className="response mb-2 w-6/12 ml-auto mr-auto">
-          <p className='text-base bg-rose-200 rounded-lg'>{apiResponse}</p>
-        </div>
+          <div className="response mb-2 w-6/12 ml-auto mr-auto">
+            <p className='text-base bg-rose-200 rounded-lg'>{apiResponse}</p>
+          </div>
 
-        <div className='sendRegisterButton'>
-          <Button name="Registrar" onClick={sendRegister} disabled={activateButton} />
-        </div>
+          <div className='sendRegisterButton'>
+            <Button name="Registrar" onClick={sendRegister} disabled={activateButton} />
+          </div>
 
-        <div className="mt-2 mb-2 text-sm font-medium text-black dark:text-gray-300">
-          Já tem uma conta? <button onClick={ () => navigate('/')} className="text-blue-700 hover:underline dark:text-blue-500">Faça login.</button>
+          <div className="mt-2 mb-2 text-sm font-medium text-black dark:text-gray-300">
+            Já tem uma conta? <button onClick={() => navigate('/')} className="text-blue-700 hover:underline dark:text-blue-500">Faça login.</button>
+          </div>
         </div>
-      </div>
       </div>
     </motion.div>
   )

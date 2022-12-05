@@ -67,7 +67,7 @@ const Login = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}>
-                <div className='flex flex-col mt-80 items-center'>
+            <div className='flex flex-col mt-80 items-center'>
                 <Header />
                 <div className='Registerbox mt-4 shadow-xl rounded-3xl border-solid border-4
      border-green-400 bg-green-300 w-96 text-center content-center'>
@@ -94,14 +94,14 @@ const Login = () => {
                     </div>
 
                     <div className="mt-2 mb-2 text-sm font-medium text-black dark:text-gray-300">
-                        Não cadastrado? <button onClick={ () => navigate('/register')} className="text-blue-700 hover:underline dark:text-blue-500">Criar uma conta.</button>
+                        Não cadastrado? <button onClick={() => navigate('/register')} className="text-blue-700 hover:underline dark:text-blue-500">Criar uma conta.</button>
                     </div>
 
                 </div>
-                </div>
-            
+            </div>
+
         </motion.div >
-        
+
     )
 }
 
